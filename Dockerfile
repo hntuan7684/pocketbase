@@ -5,4 +5,4 @@ FROM alpine:3.18
 WORKDIR /pb
 
 # Chạy ứng dụng với Tini để tránh lỗi tiến trình
-CMD ["./pocketbase.exe", "serve"]
+CMD ["/pocketbase", "serve"]
