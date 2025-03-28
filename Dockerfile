@@ -1,6 +1,6 @@
 FROM alpine:latest
 WORKDIR /pb
-RUN apk add --no-cache ca-certificates
+RUN apk --no-cache add ca-certificates tini
 COPY ./pocketbase /pb/
 COPY ./pb_data /pb/pb_data/
 COPY ./pb_public /pb/pb_public/
